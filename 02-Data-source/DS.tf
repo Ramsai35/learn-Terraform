@@ -6,3 +6,7 @@ data "aws_ami" "example" {
 
 
 }
+
+output "ami" {
+  value = data.aws_ami.example
+}
